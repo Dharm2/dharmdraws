@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>GAME</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(carpet.png),lightblue;
+            background-size: 1200px 800px;
+            background-repeat: no-repeat;
+            background-position: 200px 100px;
+        }
+        .tools
+        {
+            width: 400px;
+            height: 974px;
+            background: #262626;
+            position: relative;
+            left: 79%;
+        }
+        .tools h1{
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            border-bottom: 3px solid #fff;
+        }
+        #bread
+        {
+            width: 700px;
+            height: 700px;
+            background: rgb(255, 255, 128);
+            position: relative;
+            top: -860px;
+            left: 25%;
+            border-radius: 50%;
+            border: 35px solid #756204;
+            display: none;
+        }
+        .tools .breadh2
+        {
+            color:#fff;
+            text-align: center;
+            margin-top: 10px;
+            border: 2px solid white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .tools .breadh2:hover{
+            background: #fff;
+            color: #262626;
+        }
+        .tools .breadadd
+        {
+            width: 100px;
+            height: 40px;
+            font-size: 15px;
+            position: relative;
+            left: 150px;
+        }
+        .sosh2{
+            color:#fff;
+            text-align: center;
+            margin-top: 10px;
+            border: 2px solid white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .redsos{
+            width: 100px;
+            height: 40px;
+            background: red;
+            border: 0;
+            font-size: 23px;
+            color: #fff;
+            margin-left: 15px; 
+        }
+        .yelsos
+        {
+            width: 100px;
+            height: 40px;
+            background: yellow;
+            border: 0;
+            font-size: 20px;
+            color: #fff;
+            margin-left: 25px; 
+        }
+        .gresos
+        {
+            width: 100px;
+            height: 40px;
+            background: green;
+            border: 0;
+            font-size: 20px;
+            color: #fff;
+            margin-left: 280px; 
+            margin-top: 0;
+            position: relative;
+            top: -40px;
+        }
+       /* .red{
+            width: 700px;
+            height: 700px;
+            background: red;
+            border-radius: 50%;
+            display: all;
+        }*/
+        /*.redmush
+        {
+            width: 700px;
+            height: 700px;
+            background: url(greenmush.png);
+            position: relative;
+            top: -860px; 
+            left: 25%;
+            border-radius: 
+        }*/
+        .mushroom
+        {
+            color:#fff;
+            text-align: center;
+            margin-top: 10px;
+            border: 2px solid white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: uppercase;
+        }
+        .gremush
+        {
+            margin-left: 95px;
+        }
+        .yelmush
+        {
+            margin-top: 7px;
+            margin-left: 95px;
+        }
+        .redmush
+        {
+            margin-top: 7px;
+            margin-left: 95px;
+        }
+    </style>
+</head>
+<body>
+    <!--tools section-->
+    <div class="tools">
+        <h1>INGREDIENTS</h1>
+        <h2 class="breadh2">BREADS</h2>
+        <button class="breadadd" onclick="breadadd()">Add a bread</button>
+        <h2 class="sosh2">KETCHUP</h2>
+        <button class="redsos" onclick="redsos()">RED</button>
+        <button class="yelsos" onclick="yelsos()">YELLOW</button>
+        <button class="gresos" onclick="gresos()">GREEN</button>
+        <h2 class="mushroom">mushroom</h2>
+        <button class="gremush" onclick="gremush()">Mushroom with green ketchup</button>
+        <button class="yelmush" onclick="yelmush()">Mushroom with yellow ketchup</button>
+        <br>
+        <button class="redmush" onclick="redmush()">Mushroom with red ketchup</button>
+    </div>
+    <div id="bread">
+           
+    </div>
+   <!--div class="redmush"></div-->
+    <script>
+        function breadadd(){
+            var bread =  document.getElementById('bread').style.display = "block";
+        }
+        function redsos(){
+            var a = document.getElementById('bread');
+            a.style.background = "red";
+        }
+        function yelsos(){
+            var a = document.getElementById('bread');
+            a.style.background = "yellow";
+        }
+        function gresos(){
+            var a = document.getElementById('bread');
+            a.style.background = "green";
+        }
+        function gremush(){
+            var a =document.getElementById('bread');
+            a.style.background = "url(greenmush.png)";
+        }
+        function yelmush(){
+            var a =document.getElementById('bread');
+            a.style.background = "url(yelmush.png)";
+        }
+        function redmush(){
+            var a =document.getElementById('bread');
+            a.style.background = "url(redmush.png)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Hover Effect</title>
+    <style media="screen">
+      body{
+        margin: 0;
+        padding: 0;
+        background: #D1C749;
+      }
+      .main{
+        width: 400px;
+        height: 65px;
+        border: 3px solid #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        transition: .5s;
+        /*box-shadow: 0px 10px 30px rgba(0,0,0,.4),
+        			10px 20px 30px rgba(0,0,0,.6);*/
+      }
+      .main:hover
+      {
+      	background: #6A684E;
+      }
+      .text1{
+        width: 80px;
+        height: 65px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: inset 0px -10px 20px rgba(0,0,0,0.4);
+        font-size: 40px;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 65px;
+        transition: .5s;
+      }
+      .main:hover .text1{
+        transform: skew(-20deg);
+                transform-origin: left;
+      }
+      .text2{
+        width: 80px;
+        height: 65px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 80px;
+        box-shadow: inset 0px -10px 20px rgba(0,0,0,0.4);
+        font-size: 40px;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 65px;
+                transition: .5s;
+        transition-delay: .3s;
+      }
+      .main:hover .text2{
+      	transform: skew(-20deg);
+      	transform-origin: right;
+      }
+      .text3{
+        width: 80px;
+        height: 65px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 160px;
+         
+          font-size: 40px;
+          font-family: sans-serif;
+          text-align: center;
+          line-height: 65px;
+          overflow: hidden;
+          z-index: 2;
+          transition: .5s;
+      }
+      .main:hover .text3{
+      	top: -80px;
+      }
+      .text4{
+        width: 80px;
+        height: 65px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 240px;
+          box-shadow: inset 0px -10px 20px rgba(0,0,0,0.4);
+          font-size: 40px;
+          font-family: sans-serif;
+          text-align: center;
+          line-height: 65px;
+            transition: .5s;
+            overflow: hidden;
+       z-index: 1;
+      }
+      .main:hover .text4{
+      	transform: skew(20deg);
+      }
+      .text5{
+        width: 80px;
+        height: 65px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 320px;
+          box-shadow: inset 0px -10px 20px rgba(0,0,0,0.4);
+          font-size: 40px;
+          font-family: sans-serif;
+          text-align: center;
+          line-height: 65px;
+            transition: .5s;
+        transition-delay: .3s;
+      }
+      .main:hover .text5{
+      	transform: skew(20deg);
+      }
+      .text3extend{
+      	width: 80px;
+        height: 65px;
+        background: #000;
+        position: absolute;
+        top: 80px;
+        left: 160px;
+        
+        font-size: 40px;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 65px;
+        z-index: 99;
+        color: #fff;
+        transition: .6s;
+        margin-top: 0;
+      }
+      .main:hover .text3extend{
+      	top: 0;
+      }
+      .shadow{
+      	width: 400px;
+      	height: 6px;
+      	position: absolute;
+      	top: 57%;
+      	left: 39.5%;
+      	background: black;
+      	filter: blur(8px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="text1">
+          D
+      </div>
+      <div class="text2">
+        H
+      </div>
+      <div class="text3">
+        A
+      </div>
+      <div class="text3extend">
+      	A
+      </div>
+      <div class="text4">
+        R
+      </div>
+      <div class="text5">
+        M
+      </div>
+
+    </div>
+    <div class="shadow"></div>
+  </body>
+</html>

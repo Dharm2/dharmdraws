@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TExt FIll color</title>
+    <style media="screen">
+      h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: verdana;
+        font-size: 200px;
+        color: #ddd;
+        transition: .5s;
+      }
+      h1::before
+      {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        color: #262626;
+        overflow: hidden;
+        transition: .2s;
+      }
+      h1:hover::before
+      {
+        width: 100%;
+      }
+    
+      p{
+        position: absolute;
+        top: 85%;
+        left: 85%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>&copy;D.H.Coders</p>
+    <h1 data-text="DHARM">DHARM</h1>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>HOver </title>
+<style>
+*{margin:0;padding:0;}
+.layer1{
+	background: #000;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+.layer2{
+	background:black;
+	width:600px;
+	height:500px;
+	position:absolute;
+	top:35%;
+	left:35%;
+	transform:translate(-45%;-45%);
+	transition:.5s;
+	font-size:60px;
+	text-align:center;
+	animation:animate 5s linear infinte;
+}
+
+@keyframes animate{
+	0%{color:black;}
+	25%{color:yellow;}
+	50%{color:orange;}
+	75%{color:red;}
+	100%{color:white;}
+
+}
+
+
+.layer2:hover
+{
+	box-shadow:5px 5px 40px #fff;
+	color:#fff;
+	}
+.layer3{
+	background:black;
+	width:400px;
+	height:250px;
+	position:absolute;
+	top:50px;
+	left:35%;
+	transition:.5s;
+	font-size:60px;
+	text-align:center;
+	
+}
+.layer3:hover
+{
+	box-shadow:5px 5px 40px yellow;
+	color:#fff;
+	}
+.layer4{
+	background:black;
+	width:500px;
+	height:300px;
+	position:absolute;
+	top:100px;
+	left:35px;
+	transition:.5s;
+	font-size:60px;
+	text-align:center;
+	
+}
+.layer4:hover
+{
+	box-shadow:5px 5px 40px orange;
+	color:#fff;
+	}
+</style>
+</head>
+<body>
+
+<div class="layer1"></div>
+<div class="layer2">
+	<h1>DHARM</h1>
+
+
+
+</div>
+<div class="layer3"></div>
+<div class="layer4"></div>
+</body>
+</html>

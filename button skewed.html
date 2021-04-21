@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,blue,lightblue 0%,yellowgreen 100%);
+        }
+        #button
+        {
+            width: 250px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #f7f7f7;
+            border: 2px solid #f7f7f7;
+            font-size: 40px;
+            padding: 15px;
+            position: relative;
+            top: 500px;
+            left: 50%;
+            overflow: hidden;
+            transition: .5s; 
+text-align:center;			
+        }
+        #button::after{
+           content: '';
+           width: 0px;
+           height: 120%;
+           position: absolute;
+           left: -10%;
+           bottom: 0;
+           background-color: #fff;
+           transform: skewX(15deg);
+            z-index: -1;
+            transition: .5s;
+
+        }
+        #button:hover{
+            cursor: poniter;
+            color: lightblue;
+           
+        }
+        #button:hover:after{
+            left: -10%;
+            width: 120%;
+        }
+    </style>
+</head>
+<body>
+    <div id="button">DHARM</div>
+</body>
+</html>

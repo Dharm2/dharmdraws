@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Editor</title>
+    <style>
+        *{
+            background: black;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .box
+        {
+            width: 100%;
+            height: 180px;
+            background: white;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        #edit{
+            position: relative;            
+            top: -110px;
+            left: 850px;
+        }
+    </style>
+    <script>
+       function bg(){
+           var a =prompt("Enter Background Color");
+           var b = document.getElementById("edit");
+           b.style.background = a;
+       }
+       function co(){
+           var a = prompt("Enter a Text Color presnt in your button");
+           var b =document.getElementById('edit').style.color = a;
+       }
+       function wi(){
+           var a = prompt("Enter width in units");
+           //units == pexels.%,bdcknkj
+           var b =document.getElementById('edit').style.width = a;
+       }
+       function he(){
+        var a = prompt("Enter height in units");
+        //units == pexels.%,bdcknkj
+        var b =document.getElementById('edit').style.height = a;
+    }
+    function bo(){
+        var a = prompt("First write border width then dotted/solid and at last color of border");
+        var b = document.getElementById("edit").style.border = a;
+    }
+    function br(){
+        var a = prompt("Enter the border radius");
+        var b = document.getElementById("edit").style.borderRadius = a;
+    }
+    function fo(){
+        var a = prompt("Enter the font-size");
+        var b = document.getElementById("edit").style.fontSize = a;
+    }
+    function ff(){
+        var a = prompt("Enter the font-family");
+        var b = document.getElementById("edit").style.fontFamily = a;
+    }
+    function up(){
+        var b = document.getElementById("edit").style.textTransform = "uppercase";
+    }
+    function lo(){
+        var b = document.getElementById("edit").style.textTransform = "lowercase";
+    }
+    function ro(){
+        var a = prompt("Enter the rotate degree");
+        var b = document.getElementById("edit").style.transform.rotate = a;
+    }
+    </script>
+</head>
+<body>
+    <h1 color="black">YOU ARE GOING TO EDIT THID BUTTON:</h1>
+    <div class="box"></div>
+    <input type="button" value="Edit Me" id="edit">
+    <h2>BACKGROUND:</h2>
+    <input type="button" value="Background" onclick="bg()">
+    <h2>COLOR:</h2>
+    <input type="button" value="Color" onclick="co()">
+    <h2>WIDTH:</h2>
+    <input type="button" value="Set Width" onclick="wi()">
+    <h2>HEIGHT:</h2>
+    <input type="button" value="Set Height" onclick="he()">
+    <h2>BORDER:</h2>
+    <input type="button" value="Set Border" onclick="bo()">
+    <h2>BORDER-RADIUS:</h2>
+    <input type="button" value="Set Border-Radius" onclick="br()">
+    <h2>FONT-SIZE:</h2>
+    <input type="button" value="Set Font-Size" onclick="fo()">
+    <h2>FONT-FAMILY:</h2>
+    <input type="button" value="Set Font-Family" onclick="ff()">
+    <h2>TEXT-TRANSFORM:</h2>
+    <input type="button" value="Uppercase" onclick="up()">
+    <input type="button" value="Lowercase" onclick="lo()">
+    <h2>TRANSFORM:</h2>
+    <input type="button" value="Rotate" onclick="ro()">
+    <input type="button" value="RotateY" onclick="ry()">
+    <input type="button" value="RotateX" onclick="rx()">
+    
+</body>
+</html>
